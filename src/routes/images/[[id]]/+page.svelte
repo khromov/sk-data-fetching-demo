@@ -1,4 +1,6 @@
 <script>
+    import { navigating } from '$app/stores';
+
     export let data;
 </script>
 
@@ -21,4 +23,6 @@
 </ul>
 
 
+Currently navigating: {$navigating ? 'YES' : 'NO'}
+<br/>
 You selected image: {data?.image ? data?.image : 'none'}
